@@ -1,0 +1,178 @@
+body {
+    /* background-color: #2787e4; */
+    background-image:url("wave\ \(2\).svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 28px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 17px white; */
+    box-shadow: 1px 1px 5px rgb(53, 52, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userdefaultImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 12px 0px 55px 0px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin: 0px 0px 29px 0px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(60, 58, 58);
+}
+
+input:focus {
+    border-bottom: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+
+input#name {
+    padding: 8px 2px 7px 41px;
+    background-image: url("lock-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 9px 12px;
+
+}
+
+input#email {
+    padding: 8px 2px 7px 41px;
+    background-image: url("envelope-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: 9px 12px;
+
+}
+
+input#password {
+    padding: 8px 2px 7px 41px;
+    background-image: url("key-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 9px 12px;
+
+}
+
+#signupBtn {
+    cursor: pointer;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 7px 100px;
+    border-radius: 8px;
+}
+
+#loginBtn {
+    border:1px solid rgb(107, 105, 105);
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(51, 49, 49);
+    padding: 7px 100px;
+  
+}
+
+#loginBtn:hover {
+    cursor: pointer;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 7px 100px;
+}
+
+#or_Border{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 8px 0px;
+    color: gray;
+}
+
+#or_Border::after {
+    content: "";
+    width: 105px;
+    height: 1px;
+    background-color: rgb(71, 68, 68);
+    display: block;
+    position: relative;
+    top: -8px;
+    left: 11px;
+}
+
+#or_Border::before {
+    content: "";
+    width: 105px;
+    height: 1px;
+    background-color: rgb(83, 80, 80);
+    display: block;
+    position: relative;
+    top: -9px;
+    right: 11px;
+}
+
+@media (max-width:400px) {
+    .container{
+        width: 83%;
+        padding:19px 0px;
+    }
+
+    .userdefaultImage img{
+        width:45%;
+    }
+
+    #name{
+        width: 62%;
+    }
+
+    #email{
+        width: 62%;
+    }
+
+    #password{
+        width: 62%;
+    }
+
+    #signupBtn{
+        padding: 7px 72px;
+    }
+
+    #loginBtn{
+        padding: 7px 72px;
+    }
+
+    #loginBtn:hover{
+        padding: 7px 72px;
+    }
+
+    #or_Border::after {
+        content: "";
+        width: 65px; 
+    }
+
+    #or_Border::before {
+        content: "";
+        width: 65px; 
+    }
+}
